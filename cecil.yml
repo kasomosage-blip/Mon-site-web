@@ -1,0 +1,19 @@
+title: "Sage Kasomo"
+baseline: "Étudiant en informatique appliquée à la gestion · Développeur web"
+description: "Portfolio de Sage Kasomo, étudiant à l'UAC de Butembo et passionné par le développement web."
+baseurl: "https://kasomosage-blip.github.io/Mon-site-web/"
+language: fr
+languages:
+  - code: fr
+    name: Français
+    locale: fr_FR
+menus:
+  main:
+    - id: blog
+      enabled: false
+    - id: docs
+      enabled: false
+
+author:
+  name: "Sage Kasomo"
+  email: "kasomosage@gmail.com"

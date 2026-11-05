@@ -1,0 +1,3 @@
+# Contact displayed in the footer (see `layouts/page.html.twig`)
+- name: Écrire un e-mail
+  url: mailto:kasomosage@gmail.com

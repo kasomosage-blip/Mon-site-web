@@ -1,0 +1,9 @@
+# Cecil
+_site/
+.cache/
+.cecil/
+
+# Cecil executables are only needed for local development.
+cecil.exe
+cecil.exe.exe
+cecil.phar

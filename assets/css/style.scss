@@ -19,6 +19,27 @@ body {
   color: $ink;
 }
 
+#main {
+  overflow-wrap: anywhere;
+
+  img,
+  video,
+  iframe {
+    max-width: 100%;
+  }
+
+  pre {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+  }
+}
+
 body > header {
   max-width: 76rem;
   margin: 0 auto;
@@ -314,6 +335,12 @@ article time {
 
   summary {
     font-weight: bold;
+  }
+}
+
+@media (max-width: 900px) {
+  .card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 

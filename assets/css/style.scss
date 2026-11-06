@@ -102,6 +102,29 @@ body > header {
   }
 }
 
+body > header hgroup.site-brand {
+  display: flex;
+  flex: 0 1 auto;
+  align-items: center;
+  gap: 0.9rem;
+  min-width: 0;
+  text-align: left;
+}
+
+.site-avatar {
+  width: 3.5rem;
+  height: 3.5rem;
+  flex: 0 0 auto;
+  border: 2px solid rgba(35, 123, 112, 0.18);
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 30%;
+}
+
+.site-brand-copy {
+  min-width: 0;
+}
+
 #main {
   max-width: 76rem;
   min-height: 65vh;

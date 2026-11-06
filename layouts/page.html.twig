@@ -6,6 +6,29 @@
     {{ css(asset('css/style.scss')) }}
 {%- endblock head_css ~%}
 
+{%- block header ~%}
+      <hgroup class="site-brand">
+        <img class="site-avatar" src="{{ url('sage A.jpg') }}" alt="Photo de profil de Sage Kasomo" width="56" height="56">
+        <div class="site-brand-copy">
+          {%- if page.type == 'homepage' ~%}
+          <h1>{{ site.title }}</h1>
+          {%- else ~%}
+          <div class="site-title"><a href="{{ url(site.home) }}">{{ site.title }}</a></div>
+          {%- endif ~%}
+          <p>{{ site.baseline }}</p>
+        </div>
+      </hgroup>
+      {{- include('partials/navigation.html.twig', {menu: site.menus.main, page: page}, with_context=false) ~}}
+      <div class="site-tools">
+        {%- if page.translations|default([])|length >= 1 ~%}
+        <nav class="languages" aria-label="{% trans %}Languages{% endtrans %}">
+          {{- include('partials/languages.html.twig', {page: page, label: 'code'}, with_context=false) ~}}
+        </nav>
+        {%- endif ~%}
+        {{- include('partials/theme-selector.html.twig', {}, with_context=false) ~}}
+      </div>
+{%- endblock header ~%}
+
 {#- adds the links of the `data/links.yaml` data file ~#}
 {%- block footer ~%}
       {%- if site.data.links is defined ~%}

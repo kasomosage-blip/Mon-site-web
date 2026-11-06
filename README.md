@@ -27,6 +27,14 @@ cecil new:page
 
 ## Deployment
 
+### Vercel
+
+The `vercel.json` configuration builds the site with Cecil and publishes the generated `_site/` directory. Connect the GitHub repository to Vercel; pushes to the production branch will trigger deployments automatically.
+
+The production URL is <https://mon-site-web-bay.vercel.app/>.
+
+### GitHub Pages
+
 The GitHub Actions workflow in `.github/workflows/build-and-deploy.yml` builds and publishes this site to:
 
 <https://kasomosage-blip.github.io/Mon-site-web/>
